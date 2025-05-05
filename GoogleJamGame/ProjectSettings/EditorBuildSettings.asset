@@ -8,4 +8,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ramazan/R_ArcadeSaloon.unity
+    guid: 26c2f56dad35e9448af15a38f652c3c9
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ramazan/R_ArcadeMachine.unity
+    guid: 33a82f27c81788646928e28016ef463f
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ramazan/R_ArcadeMachineGameOver.unity
+    guid: 2e3c2c8258b2adc4fabb2d32a42fe72e
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ramazan/R_BrickGame_L1.unity
+    guid: 09dc8f1ce82369045ac94cd40fabcee3
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ramazan/R_BrickGame_L2.unity
+    guid: e772b6f8275a17f4c9aaeaf90c3bd29f
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ramazan/R_BrickGame_L3.unity
+    guid: b3ceef73aa9d19d4d902ada1e48386ea
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ramazan/R_ArcadeMachineWin.unity
+    guid: 77e0a3b7bae636f4f8ba1ace11f4ea1d
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ramazan/R_ArcadeSaloonAfterGame2.unity
+    guid: ca37303892a099a4084b7e27b6fcdff3
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ramazan/R_AwardScene.unity
+    guid: 34aa8cfbaeaf69f4fa72e59699f2d4eb
   m_configObjects: {}

@@ -47,6 +47,13 @@ public class R_LevelManager : MonoBehaviour
                 //Debug.Log("Yeterli ticket yok.");
             }
         }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (SceneManager.GetActiveScene().name == ("R_AwardScene"))
+            {
+                SceneManager.LoadScene("R_HowTo");
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

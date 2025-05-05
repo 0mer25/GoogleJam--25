@@ -17,6 +17,10 @@ public class R_ArcadeMachineLevelManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
+            if (SceneManager.GetActiveScene().name == ("R_HowTo"))
+            {
+                SceneManager.LoadScene("R_ArcadeSaloon");
+            }
             if (SceneManager.GetActiveScene().name == ("R_ArcadeMachineWin"))
             {
                 SceneManager.LoadScene("R_ArcadeSaloonAfterGame");

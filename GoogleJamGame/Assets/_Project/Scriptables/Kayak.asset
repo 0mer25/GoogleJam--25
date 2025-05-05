@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41e60b865d4c5b4880b1f9c00fc9d42, type: 3}
   m_Name: Kayak
   m_EditorClassIdentifier: 
-  isCompleted: 0
+  isCompleted: 1

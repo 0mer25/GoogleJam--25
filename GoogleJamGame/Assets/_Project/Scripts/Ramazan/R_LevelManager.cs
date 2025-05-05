@@ -51,7 +51,8 @@ public class R_LevelManager : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == ("R_AwardScene"))
             {
-                SceneManager.LoadScene("R_HowTo");
+                //SceneManager.LoadScene("R_HowTo");
+                O_SceneManager.Instance.WinGame();
             }
         }
     }

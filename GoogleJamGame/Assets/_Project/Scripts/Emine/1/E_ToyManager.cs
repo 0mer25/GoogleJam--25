@@ -41,7 +41,7 @@ public class E_ToyManager : MonoBehaviour
         }
     }
 
-    // Text1 ve Text2 için aktif durumu kontrol eden deðiþkenler
+    // Text1 ve Text2 iï¿½in aktif durumu kontrol eden deï¿½iï¿½kenler
     private bool isText1Active = false;
     private bool isText2Active = false;
     private bool isText3Active = false;
@@ -53,11 +53,11 @@ public class E_ToyManager : MonoBehaviour
         {
             if (gameManager.score == 5 && !isText2Active)
             {
-                ShowText(text2);  // score 5 ise text2'yi göster
+                ShowText(text2);  // score 5 ise text2'yi gï¿½ster
             }
             else if (!isText1Active)
             {
-                ShowText(text1);  // Aksi takdirde text1'i göster
+                ShowText(text1);  // Aksi takdirde text1'i gï¿½ster
             }
         }
         else
@@ -127,9 +127,9 @@ public class E_ToyManager : MonoBehaviour
 
             toy.sprite = fixedToy;
 
-            effectPlayed = true; // bir daha çalýþmasýn
+            effectPlayed = true; // bir daha ï¿½alï¿½ï¿½masï¿½n
 
-            //iki saniye sonra fixtoy yavaþça silikleþsin ve kapansýn istiyorum
+            //iki saniye sonra fixtoy yavaï¿½ï¿½a silikleï¿½sin ve kapansï¿½n istiyorum
             StartCoroutine(FadeAndDisableFixToy());
         }
     }
@@ -149,7 +149,7 @@ public class E_ToyManager : MonoBehaviour
             originalColors[i] = sprites[i].color;
         }
 
-        // Baþlangýçta tüm sprite'lar tam þeffaf (alpha = 0)
+        // Baï¿½langï¿½ï¿½ta tï¿½m sprite'lar tam ï¿½effaf (alpha = 0)
         foreach (var sprite in sprites)
         {
             sprite.color = new Color(originalColors[0].r, originalColors[0].g, originalColors[0].b, 0f);
@@ -202,7 +202,9 @@ public class E_ToyManager : MonoBehaviour
             yield return null;
         }
 
-        fixToy.SetActive(false); // Tüm sprite'lar solunca kapat
+        fixToy.SetActive(false); // Tï¿½m sprite'lar solunca kapat
+
+        O_SceneManager.Instance.WinGame(); // Oyun kazanma ekranï¿½nï¿½ gï¿½ster
     }
 
 }

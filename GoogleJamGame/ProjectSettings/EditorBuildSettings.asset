@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/Oyun/Ani_Kayak.unity
     guid: a3656ce53ca371e4ebfcb06f8e033af0
+  - enabled: 1
+    path: Assets/_Project/Scenes/Emine.unity
+    guid: 6e8999e2f40fe264fb494f9667267093
+  - enabled: 1
+    path: Assets/_Project/Scenes/Emine2.unity
+    guid: 6411d73f78cac0e40a2c52596dd332bb
   m_configObjects: {}

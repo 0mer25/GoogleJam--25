@@ -1187,10 +1187,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6664ab88eab9d842b8a90c0dddb992b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ticketManager: {fileID: 0}
+  ticketManager: {fileID: 384740928}
   requiredTickets: 10
-  coinManager: {fileID: 0}
-  playerMovement: {fileID: 0}
+  coinManager: {fileID: 384740930}
+  playerMovement: {fileID: 1873371772}
 --- !u!1 &629028081
 GameObject:
   m_ObjectHideFlags: 0

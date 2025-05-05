@@ -2994,8 +2994,6 @@ GameObject:
   - component: {fileID: 1873371776}
   - component: {fileID: 1873371775}
   - component: {fileID: 1873371774}
-  - component: {fileID: 1873371773}
-  - component: {fileID: 1873371772}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3003,56 +3001,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1873371772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873371771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e6c784933d457e40bdf2cfaa44c4f67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
-  jumpingPower: 20
-  nextScene: 0
-  previousScene: 0
-  rb: {fileID: 1873371773}
-  groundCheck: {fileID: 503896952}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  ticketManager: {fileID: 384740928}
-  coinManager: {fileID: 0}
---- !u!50 &1873371773
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873371771}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 4
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 1
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
-  m_Constraints: 4
 --- !u!61 &1873371774
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3473,7 +3421,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 2.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

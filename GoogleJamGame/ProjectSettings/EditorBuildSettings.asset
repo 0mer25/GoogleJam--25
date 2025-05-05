@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/Ramazan/R_AwardScene.unity
     guid: 34aa8cfbaeaf69f4fa72e59699f2d4eb
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ramazan/R_ArcadeSaloonAfterGame.unity
+    guid: 9371d9d6c83200949a35d32c4647e62a
   m_configObjects: {}

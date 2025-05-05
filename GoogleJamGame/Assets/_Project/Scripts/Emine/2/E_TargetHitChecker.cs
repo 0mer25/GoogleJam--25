@@ -8,13 +8,13 @@ public class E_TargetHitChecker : MonoBehaviour
     public Button actionButton;
     public Slider successSlider;
     public GameObject dialogue;
-    public TextMeshProUGUI dialogueText;               // Baþarýlý olduðunda çýkan metin
+    public TextMeshProUGUI dialogueText;               // Baï¿½arï¿½lï¿½ olduï¿½unda ï¿½ï¿½kan metin
     public CanvasGroup dialogueCanvasGroup;
 
-    public TextMeshProUGUI failText;                   // Baþarýsýz týklama için kýsa metin
+    public TextMeshProUGUI failText;                   // Baï¿½arï¿½sï¿½z tï¿½klama iï¿½in kï¿½sa metin
     public CanvasGroup failCanvasGroup;
 
-    public E_FloatUpDown floatScript;  // Hareketi durduracaðýmýz script
+    public E_FloatUpDown floatScript;  // Hareketi durduracaï¿½ï¿½mï¿½z script
 
     public float sliderIncreaseAmount = 1f;
     public float fillSpeed = 2f;
@@ -38,7 +38,7 @@ public class E_TargetHitChecker : MonoBehaviour
     bool hasWon = false;
 
     public RectTransform imageRectTransform;
-    public Vector3 targetPosition; // Genellikle sahnenin ortasý
+    public Vector3 targetPosition; // Genellikle sahnenin ortasï¿½
     public Vector3 targetScale = Vector3.one; // Normal boyut
     public float moveDuration = 1.5f;
 
@@ -54,7 +54,7 @@ public class E_TargetHitChecker : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = Mathf.Clamp01(elapsed / moveDuration);
 
-            // Pozisyon ve ölçek interpolasyonu
+            // Pozisyon ve ï¿½lï¿½ek interpolasyonu
             imageRectTransform.anchoredPosition = Vector3.Lerp(startPosition, targetPosition, t);
             imageRectTransform.localScale = Vector3.Lerp(startScale, targetScale, t);
 
@@ -72,7 +72,7 @@ public class E_TargetHitChecker : MonoBehaviour
         dialogue.SetActive(false);
         targetSliderValue = successSlider.value;
 
-        // Baþlangýçta uyarý metni görünmesin
+        // Baï¿½langï¿½ï¿½ta uyarï¿½ metni gï¿½rï¿½nmesin
         failText.gameObject.SetActive(false);
         failCanvasGroup.alpha = 0;
 
@@ -111,7 +111,7 @@ public class E_TargetHitChecker : MonoBehaviour
         if (inZone)
         {
             audioSource.PlayOneShot(call1Sound);
-            Debug.Log("Baþarýlý!");
+            Debug.Log("Baï¿½arï¿½lï¿½!");
             targetSliderValue += sliderIncreaseAmount;
             if (targetSliderValue > successSlider.maxValue)
                 targetSliderValue = successSlider.maxValue;
@@ -120,7 +120,7 @@ public class E_TargetHitChecker : MonoBehaviour
         }
         else
         {
-            Debug.Log("Kaçýrdýn.");
+            Debug.Log("Kaï¿½ï¿½rdï¿½n.");
             targetSliderValue -= sliderIncreaseAmount;
             if (targetSliderValue < successSlider.minValue)
                 targetSliderValue = successSlider.minValue;
@@ -190,6 +190,8 @@ public class E_TargetHitChecker : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(MoveAndScaleImage());
             audioSource.PlayOneShot(winSound);
+
+            O_SceneManager.Instance.WinGame();
         }
     }
 

@@ -6,7 +6,22 @@ public class O_AniTopu : MonoBehaviour
     [SerializeField] private List<GameObject> openObjects;
     private bool isOpen = false;
     [SerializeField] private int sceneIndex = 0;
+    [SerializeField] private O_AniScriptable o_AniScriptable;
+    [SerializeField] private Sprite originalSprite;
+    [SerializeField] private Sprite yellowSprite;
 
+    void OnEnable()
+    {
+        if(o_AniScriptable.isCompleted)
+        {
+            GetComponent<SpriteRenderer>().sprite = yellowSprite;
+            GetComponent<Collider2D>().enabled = false;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = originalSprite;
+        }
+    }
 
     private void Update()
     {

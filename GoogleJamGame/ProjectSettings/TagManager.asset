@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Tool
+  - Wheel1
+  - Wheel2
+  - Door1
+  - Door2
+  - Lamp
+  - TargetZone
   layers:
   - Default
   - TransparentFX
